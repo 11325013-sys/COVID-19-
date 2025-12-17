@@ -8,6 +8,7 @@ Colab 最長的執行時間為 12 小時，但訓練 YOLO 通常都要來長達�
 用Colab的免費GPU訓練YOLO
 建立 Colab 專用的 disk 空間
 在您的 Google Drive 建立一個 folder 專門給 Colab 使用。下方的例子中，我在最上層建了一個space_Colab。
+<img width="329" height="111" alt="ˇ" src="https://github.com/user-attachments/assets/12a04a31-a6f7-4109-80c8-3531c827c97a" />
 
 
 （圖片來源：曾成訓提供）
