@@ -125,6 +125,7 @@ for loop_folder in range(int(img_count_total/file_count_in_folder)+1):
     except:
         print("#{}/{} move filed".format(loop_folder, i))
         continue
+<img width="768" height="224" alt="7-2-768x224" src="https://github.com/user-attachments/assets/f0e34e44-6232-4e60-9497-7531d00914cb" />
 
 （圖片來源：曾成訓提供）
 
@@ -138,6 +139,7 @@ for loop_folder in range(int(img_count_total/file_count_in_folder)+1):
 
 5. 下載官方版 Darknet 到 Google Drive
 先新增一 Colab 頁面，指定為使用 GPU（Runtime 🡪 Change runtime type）
+<img width="462" height="325" alt="8-2" src="https://github.com/user-attachments/assets/90dcd0a0-4e96-4f20-80e8-a2b889e1461d" />
 
 
 （圖片來源：曾成訓提供）
@@ -244,11 +246,13 @@ file.write(block)
 
 !./darknet detect cfg/yolov3.cfg /WORK1/cfg_YOLO/Pretrained/yolov3.weights data/dog.jpg
 由於 Darknet 在做偵測時會嘗試顯示圖片並等待使用者動作，所以會等待一段時間才會出現訊息，您可以修改 examples/detector.c，comment 下方 612~615 的內容。
+<img width="486" height="124" alt="9-3" src="https://github.com/user-attachments/assets/09e20b15-d33f-4249-8793-05f289c3ea51" />
 
 
 （圖片來源：曾成訓提供）
 
 執行結果如下，確認 Darknet 可正常的執行。
+<img width="621" height="407" alt="10-3" src="https://github.com/user-attachments/assets/46c742c0-0dc0-4e1a-8739-f3648b32af1d" />
 
 
 （圖片來源：曾成訓提供）
@@ -270,11 +274,13 @@ drive.mount(‘/content/gdrive’, force_remount=True)
 
 !./darknet detector train /WORK1/cfg_YOLO/cfg.crowdHuman_colab/obj.data /WORK1/cfg_YOLO/cfg.crowdHuman_colab/crowd_human_yolov3_colab.cfg /WORK1/cfg_YOLO/Pretrained/darknet53.conv.74
 會看到 Colab 載入 model 後開始進行訓練了。
+<img width="768" height="202" alt="11-3-768x202" src="https://github.com/user-attachments/assets/125265ec-e8ac-4be1-ad37-0aeaf9593347" />
 
 
 （圖片來源：曾成訓提供）
 
 可能過了一段時間訓練 log 畫面都沒有更新，但左上角的圓形有在轉，表示有在運作，可以不用擔心，另外您也可以將其同步在 Google Drive 上，就能看到訓練的 weights 有持續在增加及更新（下圖紅框部份）。
+<img width="768" height="233" alt="12-4-768x233" src="https://github.com/user-attachments/assets/a8adf1e8-4be0-41c4-9cea-27964125eebb" />
 
 
 （圖片來源：曾成訓提供）
@@ -285,13 +291,16 @@ drive.mount(‘/content/gdrive’, force_remount=True)
 
 
 （圖片來源：曾成訓提供）
+<img width="768" height="298" alt="13-3-768x298" src="https://github.com/user-attachments/assets/a9fd9e6b-4ce5-4646-8305-205b0c10fbd9" />
 
 訓練結果
 在經過數天斷斷續續的訓練後，使用 Crowd Human dataset 的15,000張圖片，透過 Colab 所訓練的結果如下，但其實還不算是最佳。
+<img width="768" height="432" alt="14-3-768x432" src="https://github.com/user-attachments/assets/934d96d1-4f61-4dac-a6e8-d2988824c9f7" />
 
 
 （圖片來源：曾成訓提供）
 
+<img width="768" height="432" alt="15-2-768x432" src="https://github.com/user-attachments/assets/dd966e31-a31f-4b01-95f7-43326ba9270e" />
 
 （圖片來源：曾成訓提供）
 
@@ -318,6 +327,7 @@ The best available hardware is prioritized for users who use Colaboratory intera
 Please note that using Colaboratory for cryptocurrency mining is disallowed entirely, and may result in being banned from using Colab altogether.
 
 當您突破 12 小時的限制，持續重新執行 Colab 來跑你的 YOLO training，不消幾天您的 Colab 頁面就會出現下方訊息：
+![16-768x170](https://github.com/user-attachments/assets/ff5bee47-d4dc-4a14-a253-943a09230821)
 
 
 您會在短時間內被封鎖，無法再使用 Colab 的 GPU，因為只要一執行就會出現這個訊息，只有切換為一般的 CPU 才能正常運作，因為您已經被 Google 逮到將 Colab 用在長時間運算而非測試與學習的任務，必須等待短則半天多則數天才能再次使用。
