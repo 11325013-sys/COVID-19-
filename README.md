@@ -26,6 +26,7 @@ Chrome：設定🡪網站設定🡪Javascript，將下列三個網域加入 whit
 
 Colab的限制
 如果你在 Colab 輸入下方的指令，會看到目前提供的 GPU 型號是 Tesla P100，而且還是 16 GB 的版本！
+<img width="768" height="64" alt="4-3-768x64" src="https://github.com/user-attachments/assets/2a4ac7c1-bf3d-4ac6-a2df-b70dd0bc9898" />
 
 
 （圖片來源：曾成訓提供）
